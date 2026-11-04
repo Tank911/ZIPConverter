@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+      <style>
+        :root {
+            --bg: #f6f7f9;
+            --card: #fff;
+            --tx: #1b1f24;
+            --mut: #6a737d;
+            --ac: #2563eb;
+            --bd: #d0d7de
+        }
+
+        @media (prefers-color-scheme:dark) {
+            :root {
+                --bg: #0f1318;
+                --card: #171c23;
+                --tx: #e6e9ee;
+                --mut: #8b96a3;
+                --ac: #5b8def;
+                --bd: #2b333d
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            color: var(--tx);
+            font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+            padding: 16px
+        }
+
+        main {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card);
+            border: 1px solid var(--bd);
+            border-radius: 16px;
+            padding: 28px
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0 0 4px
+        }
+
+        p {
+            color: var(--mut);
+            margin: 0 0 20px;
+            font-size: .92rem
+        }
+    .btn-101 {
+    padding: 13px 23px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    display: inline-block;
+    position: relative;
+}
+
+.btn-101:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #0072ff;
+}
+
+.btn-101:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+}
+
+/*** disabled style ***/
+.btn-101:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #dcdcdc;
+    box-shadow: none;
+    text-shadow: none;
+}
+    </style>
+</head>
+<body>
+  <main>
+    <h1>ZIP Converter</h1>
+    <p>
+       So Tank 911 make web as All ZIP to Other.
+       what converter to like?
+    </p>
+      <img src="zip.png" height="32"><img src="7z-file.png" height="32"></img>
+      <h2>ZIP → 7z</h2>
+      <p>Convert a .zip archive to .7z</p>
+      <button class="btn-101">Go!</button>
+      <p></p>
+      <img src="zip.png" height="32"><img src="rar-file.png" height="32"></img>
+      <h2>ZIP → RAR</h2>
+      <p>Convert a .zip archive to .rar</p>
+      <button class="btn-101">Go!</button>
+      <p></p>
+       <img src="zip.png" height="32"><img src="tar.png" height="32"></img>
+      <h2>ZIP → TAR</h2>
+      <p>Convert a .zip archive to .tar</p>
+      <button class="btn-101">Go!</button>
+  </main>
+</body>
+</html>
