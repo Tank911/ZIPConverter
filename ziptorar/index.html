@@ -242,11 +242,11 @@
                 const zip = await JSZip.loadAsync(file);
                 const out = await build(zip);
                 const url = URL.createObjectURL(new Blob([out], {
-                    type: 'application/x-7z-compressed'
+                    type: 'application/vnd.rar'
                 }));
                 const a = $('dl');
                 a.href = url;
-                a.download = file.name.replace(/\.zip$/i, '') + '.7z';
+                a.download = file.name.replace(/\.zip$/i, '') + '.rar';
                 a.style.display = 'block';
                 $('st').textContent = 'Done: ' + (out.length / 1048576).toFixed(2) + ' MB';
             } catch (e) {
